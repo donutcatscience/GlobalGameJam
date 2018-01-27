@@ -1,8 +1,8 @@
 {
-    "id": "0ef757dc-a13c-460b-a8de-e9097b360591",
+    "id": "8eecf982-16d2-45cd-94e1-c1b1ddbe8846",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_button08",
+    "name": "obj_fakeMouse",
     "eventList": [
         
     ],
