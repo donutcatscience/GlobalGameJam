@@ -13,3 +13,7 @@ vspd = 0
 
 hspeed = hspd
 vspeed = vspd
+
+scr_shoot(spd)
+
+scr_shoot()

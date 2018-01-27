@@ -1,8 +1,8 @@
 hspeed = hspd
 vspeed = vspd
 
-var velx = instance_nearest(self.x, self.y, obj_player).x - self.x
-var vely = instance_nearest(self.x, self.y, obj_player).y - self.y
+var velx = instance_nearest(self.x, self.y, obj_transmission_tower).x - self.x
+var vely = instance_nearest(self.x, self.y, obj_transmission_tower).y - self.y
 
 var magnitude = sqrt((velx*velx) + (vely*vely))
 

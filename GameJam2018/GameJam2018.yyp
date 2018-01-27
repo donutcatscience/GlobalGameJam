@@ -191,6 +191,25 @@
             }
         },
         {
+            "Key": "55351aca-763e-4061-9390-ad6699c3326d",
+            "Value": {
+                "id": "aa0cd77b-ea97-42cc-93b9-bb7e52b33930",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/scr_shoot\/scr_shoot.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "5f0558e8-08a6-4c62-ae2f-93b96badcd3e",
             "Value": {
                 "id": "3cc4d78c-f3ed-41df-843b-3926bc8d93ed",
@@ -362,6 +381,25 @@
             }
         },
         {
+            "Key": "91eb8806-0972-45f2-abca-7fa149e961e2",
+            "Value": {
+                "id": "25489547-c9e3-4c14-9b32-d1520a8e8173",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/obj_transmission_tower\/obj_transmission_tower.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "9b1d2b08-b7ac-4388-aefa-e3763464637f",
             "Value": {
                 "id": "f9b45070-f652-499f-9cb5-5ba8dd80334d",
@@ -397,6 +435,25 @@
                 ],
                 "resourcePath": "options\/linux\/options_linux.yy",
                 "resourceType": "GMLinuxOptions"
+            }
+        },
+        {
+            "Key": "b5172bf4-c0ca-4372-8083-25ea9819c872",
+            "Value": {
+                "id": "9218b098-2ae2-48dc-902a-947493dfb13c",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/sprite5\/sprite5.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -743,7 +800,7 @@
         }
     ],
     "script_order": [
-        
+        "55351aca-763e-4061-9390-ad6699c3326d"
     ],
     "tutorial": ""
 }
