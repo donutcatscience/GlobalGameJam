@@ -8,15 +8,14 @@
     "inheritLayers": false,
     "instanceCreationOrderIDs": [
         "84c1873a-4113-4154-927b-3462d2b4f688",
-        "421f73e1-5332-4c0a-8e1e-60cadccbcdf2",
-        "e2ad97df-3aab-45eb-9335-9858ca9904ed"
+        "421f73e1-5332-4c0a-8e1e-60cadccbcdf2"
     ],
     "IsDnD": false,
     "layers": [
         {
             "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
-            "name": "asteroids",
-            "id": "375b8369-bd41-458e-b4aa-d16965678f3a",
+            "name": "Instances",
+            "id": "e2e86309-cf50-4413-840f-471acbbe4c0a",
             "depth": 0,
             "grid_x": 32,
             "grid_y": 32,
@@ -27,7 +26,8 @@
             "inheritSubLayers": false,
             "inheritVisibility": false,
             "instances": [
-
+{"name": "inst_12163F38","id": "84c1873a-4113-4154-927b-3462d2b4f688","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_12163F38","objId": "62b8d15d-7daf-40d2-977e-6a0f6256007b","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": 512,"y": 224},
+{"name": "inst_74BE5DDC","id": "421f73e1-5332-4c0a-8e1e-60cadccbcdf2","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_74BE5DDC","objId": "38a97ada-7a46-47b9-854f-e749c4ad651e","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": 672,"y": 352}
             ],
             "layers": [
 
@@ -41,8 +41,8 @@
         },
         {
             "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
-            "name": "Instances",
-            "id": "e2e86309-cf50-4413-840f-471acbbe4c0a",
+            "name": "asteroids",
+            "id": "375b8369-bd41-458e-b4aa-d16965678f3a",
             "depth": 100,
             "grid_x": 32,
             "grid_y": 32,
@@ -53,9 +53,7 @@
             "inheritSubLayers": false,
             "inheritVisibility": false,
             "instances": [
-{"name": "inst_12163F38","id": "84c1873a-4113-4154-927b-3462d2b4f688","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_12163F38","objId": "62b8d15d-7daf-40d2-977e-6a0f6256007b","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": 512,"y": 224},
-{"name": "inst_74BE5DDC","id": "421f73e1-5332-4c0a-8e1e-60cadccbcdf2","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_74BE5DDC","objId": "38a97ada-7a46-47b9-854f-e749c4ad651e","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": 672,"y": 352},
-{"name": "inst_163A889B","id": "e2ad97df-3aab-45eb-9335-9858ca9904ed","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_163A889B","objId": "4703a1bb-6869-4aaa-8623-8612dd903a38","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": 736,"y": 608}
+
             ],
             "layers": [
 
@@ -117,12 +115,12 @@
     },
     "roomSettings":     {
         "id": "ff8a235f-54be-455b-9d25-7829eaf1d2b3",
-        "Height": 1080,
+        "Height": 2160,
         "inheritRoomSettings": false,
         "modelName": "GMRoomSettings",
         "persistent": false,
         "mvc": "1.0",
-        "Width": 1920
+        "Width": 3840
     },
     "mvc": "1.0",
     "views": [

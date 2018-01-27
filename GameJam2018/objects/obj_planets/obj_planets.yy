@@ -1,18 +1,18 @@
 {
-    "id": "4d2c01f4-d157-446d-95c4-bb4b93b441b5",
+    "id": "9c2e9cd4-3742-4405-bbb6-bdf196d15d40",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_asteroid",
+    "name": "obj_planets",
     "eventList": [
         {
-            "id": "b6ec5c14-0bc3-46dc-bff9-a4773f062b1b",
+            "id": "dd9b4f33-ca2d-432b-842a-02d5c826a6a7",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
-            "eventtype": 3,
-            "m_owner": "4d2c01f4-d157-446d-95c4-bb4b93b441b5"
+            "eventtype": 0,
+            "m_owner": "9c2e9cd4-3742-4405-bbb6-bdf196d15d40"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -33,6 +33,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "ed9d3554-ab79-4452-b85e-f213b280923d",
+    "spriteId": "00000000-0000-0000-0000-000000000000",
     "visible": true
 }
