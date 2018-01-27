@@ -1,28 +1,18 @@
 {
-    "id": "b2bfcfe2-1ccb-4f7f-96b8-c81d27d3c034",
+    "id": "b68379ab-94a8-4902-a5c1-39d0b038ec4a",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "transmission_rings",
+    "name": "obj_planets1",
     "eventList": [
         {
-            "id": "1337c0d5-3042-4416-95e9-adc12ed0d369",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 8,
-            "m_owner": "b2bfcfe2-1ccb-4f7f-96b8-c81d27d3c034"
-        },
-        {
-            "id": "2984834f-492c-4f13-8a47-56ed25dcaf24",
+            "id": "2c48f445-f5af-43d2-8b4f-c345604ea5d3",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "b2bfcfe2-1ccb-4f7f-96b8-c81d27d3c034"
+            "m_owner": "b68379ab-94a8-4902-a5c1-39d0b038ec4a"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
