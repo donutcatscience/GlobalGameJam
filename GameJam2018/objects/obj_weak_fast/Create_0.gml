@@ -1,7 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if(movement_speed <= 20)
-{
-	movement_speed += accel_factor;
-}
+//shooting variables
+shooting_delay = false;
+delay = 0.5;
