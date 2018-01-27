@@ -15,5 +15,5 @@ for(i = 0; i < spawn_amount; i++)
 			y_temp = irandom_range(0,room_height);
 		}
 	}
-	instance_create_layer(x_temp,y_temp,"asteroids",obj_asteroid);
+	instance_create_layer(x_temp,y_temp,"asteroids",obj_asteroid)
 }
