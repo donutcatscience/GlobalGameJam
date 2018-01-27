@@ -1,4 +1,27 @@
-if(instance_nearest(self.x, self.y, other).evil == 1 )//and distance_to_object(instance_nearest(self.x, self.y, other)) <= 100)
+//mp_potential_step(instance_nearest(obj_tower_1_ship.x, obj_tower_1_ship.y, obj_enemy).x, instance_nearest(obj_tower_1.x, obj_tower_1.y, obj_enemy).y, spd, true)
+hspeed = hspd
+vspeed = vspd
+
+var velx = instance_nearest(obj_player.x, obj_player.y, obj_enemy).x - self.x
+var vely = instance_nearest(obj_player.x, obj_player.y, obj_enemy).y - self.y
+
+var magnitude = sqrt((velx*velx) + (vely*vely))
+
+if(magnitude > 0)
 {
-	mp_potential_step(other.x, other.y, spd, true)
+	unit_x = velx / magnitude
+	unit_y = vely / magnitude
 }
+
+velocity_x = unit_x * spd
+velocity_y = unit_y * spd
+
+
+var radians = arctan2(-unit_y, unit_x)
+image_angle = radtodeg(radians)
+
+
+hspd = velocity_x
+vspd = velocity_y
+
+
