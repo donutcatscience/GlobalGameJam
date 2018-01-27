@@ -63,6 +63,14 @@
             }
         },
         {
+            "Key": "4750383a-e7d8-436a-9976-4c23366b5bf0",
+            "Value": {
+                "id": "ebc652b3-aca3-464b-9d1d-b93900e7af8b",
+                "resourcePath": "rooms\\ron_test_room\\ron_test_room.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "4d2c01f4-d157-446d-95c4-bb4b93b441b5",
             "Value": {
                 "id": "68754161-5962-4a0f-b84c-0ce39bd7784c",
