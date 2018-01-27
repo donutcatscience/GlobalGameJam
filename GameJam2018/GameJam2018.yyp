@@ -39,6 +39,14 @@
             }
         },
         {
+            "Key": "1d691f93-c3f5-4f83-915c-8d6237980b80",
+            "Value": {
+                "id": "ece96ec6-928a-47f5-b7e1-52324654a6cd",
+                "resourcePath": "scripts\\spawn_objects\\spawn_objects.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "38a97ada-7a46-47b9-854f-e749c4ad651e",
             "Value": {
                 "id": "7bea8cd0-5f21-40a0-adfa-97b10d3cd532",
@@ -60,6 +68,14 @@
                 "id": "8ac1b99c-8b90-4461-be5e-8f71011c4fd5",
                 "resourcePath": "views\\4587e355-4fd3-42b8-8e10-53df2c5b8507.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "4703a1bb-6869-4aaa-8623-8612dd903a38",
+            "Value": {
+                "id": "549ab796-58dd-436c-a767-9f9de5fb87cb",
+                "resourcePath": "objects\\transmission\\transmission.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -148,6 +164,14 @@
                 "id": "79d3b0c6-05a2-48cc-b1b6-df0ca0c7ee2d",
                 "resourcePath": "options\\linux\\options_linux.yy",
                 "resourceType": "GMLinuxOptions"
+            }
+        },
+        {
+            "Key": "b2bfcfe2-1ccb-4f7f-96b8-c81d27d3c034",
+            "Value": {
+                "id": "a3f2c2ef-8272-44d3-bba4-43b3b996f9b1",
+                "resourcePath": "objects\\transmission_rings\\transmission_rings.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -240,7 +264,7 @@
         }
     ],
     "script_order": [
-        
+        "1d691f93-c3f5-4f83-915c-8d6237980b80"
     ],
     "tutorial": ""
 }
