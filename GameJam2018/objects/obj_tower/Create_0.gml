@@ -6,7 +6,6 @@ cooldown = 0;
 range = 0;
 canShoot = true;
 
-canHarvest = true;
 iron_harvested = 0;
 gold_harvested = 0;
 oxygen_harvested = 0;
@@ -48,6 +47,8 @@ else if(global.towerID == 3)
 }
 else if(global.towerID == 4)
 {
+	range = 750;
+	cooldown = 15;
 	sprite_index = spr_tower_4;
 	instanceID = 4;
 }

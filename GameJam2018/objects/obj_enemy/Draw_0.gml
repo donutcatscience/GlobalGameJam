@@ -1,5 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-enemy_hp = 200;
-hack = 0;
+draw_self();
+draw_set_color(c_red);
+draw_text(x, y, string(hack));
