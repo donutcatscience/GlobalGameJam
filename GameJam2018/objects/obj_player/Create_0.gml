@@ -3,8 +3,8 @@
 
 //variables
 movement_speed = 0;
-accel_factor = 0.5;
-deccel_factor = 0.5;
+accel_factor = 1; //6
+deccel_factor = 1; //6
 
 //determining movement
 x_triangle = 0;
