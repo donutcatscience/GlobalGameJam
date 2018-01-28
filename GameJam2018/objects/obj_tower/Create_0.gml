@@ -6,6 +6,9 @@ cooldown = 0;
 range = 0;
 canShoot = true;
 
+//planet attached to it
+attached_to = global.obj_closest;
+
 iron_harvested = 0;
 gold_harvested = 0;
 oxygen_harvested = 0;
@@ -72,4 +75,11 @@ else if(global.towerID == 7)
 	sprite_index = spr_tower_7;
 	instanceID = 7;
 	range = 2000;
+}
+else if(global.towerID == 8)
+{
+	cooldown = 6.6;
+	sprite_index = spr_tower_7;
+	instanceID = 8;
+	range = 8000;
 }

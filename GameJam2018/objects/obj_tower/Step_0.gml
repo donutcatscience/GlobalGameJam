@@ -1,13 +1,16 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+x = attached_to.x;
+y = attached_to.y;
+
 if(distance_to_object(instance_nearest(x, y, obj_enemy)) <= range && 
 (!(instanceID == 5)) || (!(instanceID == 4))) //if tower is not hack or harvester
 {
 	if(canShoot)
 	{
 		instance_create_layer(x, y, "Instances", obj_bullet);
-		canShoot = false;
+		canShoot = false;	
 		alarm[0] = room_speed * cooldown;
 	}
 }
@@ -23,6 +26,16 @@ if(instanceID == 5 && canShoot && harvest_count < 4)
 	gold_harvested += bodyHarvested.gold_count;
 	oxygen_harvested += bodyHarvested.oxygen_count;
 	hydrogen_harvested += bodyHarvested.hydrogen_count;
+	
+	if(distance_to_object(instance_nearest(x, y, obj_player)) <= 200 && harvest_count > 0)
+	{
+		harvest_count = 0;
+		
+		iron_harvested = 0;
+		gold_harvested = 0;
+		oxygen_harvested = 0;
+		hydrogen_harvested = 0;
+	}
 }
 
 if(instanceID == 4)

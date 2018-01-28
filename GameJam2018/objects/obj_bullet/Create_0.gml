@@ -45,3 +45,9 @@ else if((instance_nearest(x, y, obj_tower)).instanceID == 7)
 	alarm[0] = room_speed * 2;
 	scr_shoot(125);
 }
+else if((instance_nearest(x, y, obj_tower)).instanceID == 8)
+{
+	sprite_index = spr_bullet_8;
+	damage = 200;
+	homing = true;
+}

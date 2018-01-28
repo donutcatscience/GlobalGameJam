@@ -1,5 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-global.towerID = 1;
-global.obj_closest = 0;
+draw_self();
+
+draw_set_color(c_white);
+draw_text(x, y + 40, string(iron_player))

@@ -16,3 +16,11 @@ y_triangle = lengthdir_y(1, image_angle);
 
 hspeed = x_triangle * movement_speed;
 vspeed = y_triangle * movement_speed;
+
+if(distance_to_object(instance_nearest(x, y, obj_tower)) <= 200 && instance_nearest(x, y, obj_tower).instanceID == 5)
+{
+	iron_player += instance_nearest(x, y, obj_tower).iron_harvested;
+	gold_player += instance_nearest(x, y, obj_tower).gold_harvested;
+	oxygen_player += instance_nearest(x, y, obj_tower).oxygen_harvested;
+	hydrogen_player += instance_nearest(x, y, obj_tower.hydrogen_harvested);
+}
