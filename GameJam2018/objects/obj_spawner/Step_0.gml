@@ -12,6 +12,5 @@ if(spawn = 0)
 if(spawn = 1)
 {
 	instance_create_layer(self.x, self.y, "Instances", obj_enemy)
-
 	spawn = 0
 }
