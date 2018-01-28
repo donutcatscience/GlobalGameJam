@@ -14,6 +14,7 @@ j = 1
 orbit_angle = 0
 scale(random_range(.75,1.5))
 
+grav = 0
 
 orbit_distance = point_distance(x,y,body.x,body.y)
 orbit_speed = random_range(.1,.4)

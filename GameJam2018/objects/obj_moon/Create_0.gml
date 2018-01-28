@@ -6,6 +6,6 @@ j = 1
 
 orbit_speed = 20;
 orbit_angle = 0
-scale(random_range(.75,1.5))
+scale(random_range(2,4))
 
 createStep = 1
