@@ -17,7 +17,7 @@ draw_state = false;
 5 = nebula
 */
 
-object_id = 0;
+object_id = 1;
 
 if(object_id == 1)
 {

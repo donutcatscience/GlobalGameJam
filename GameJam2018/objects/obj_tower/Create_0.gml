@@ -4,15 +4,22 @@
 hp = 100;
 cooldown = 0;
 range = 0;
-spd = 0;
 canShoot = true;
+
+canHarvest = true;
+iron_harvested = 0;
+gold_harvested = 0;
+oxygen_harvested = 0;
+hydrogen_harvested = 0;
+harvest_count = 0;
+
 instanceID = 0;
 
 /*
 1 = machinegun tower (weak/slow)
 2 = cannon (strong/slow)
 3 = drone
-4 = magnifier
+4 = hack
 5 = harvester
 6 = shotgun
 7 = railgun
@@ -47,7 +54,9 @@ else if(global.towerID == 4)
 else if(global.towerID == 5)
 {
 	sprite_index = spr_tower_5;
+	cooldown = 9;
 	instanceID = 5;
+	bodyHarvested = instance_nearest(x, y, obj_resource_manager);
 }
 else if(global.towerID == 6)
 {

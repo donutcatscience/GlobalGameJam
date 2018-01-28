@@ -42,5 +42,6 @@ else if((instance_nearest(x, y, obj_tower)).instanceID == 7)
 {
 	sprite_index = spr_bullet_7;
 	damage = 600;
-	scr_shoot(240);
+	alarm[0] = room_speed * 2;
+	scr_shoot(125);
 }
