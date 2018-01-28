@@ -1,4 +1,4 @@
-if(cooldown >= 150)
+if(cooldown >= 300)
 {
 	cooldown = 0
 	spawn = 1

@@ -36,6 +36,7 @@ yellow = 0
 purple = 0
 
 obj_enemy_target = obj_transmission_tower
+purple_focus = obj_transmission_tower
 
 hspeed = hspd
 vspeed = vspd

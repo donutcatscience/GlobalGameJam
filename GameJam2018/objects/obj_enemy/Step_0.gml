@@ -1,6 +1,6 @@
 if(justSpawned = 1)
 {
-	rng = irandom_range(1, 60)
+	rng = irandom_range(1, 100)
 	if(rng >= 1 and rng < 21)
 	{
 		obj_controller.red_seeker_count++
@@ -22,18 +22,17 @@ if(justSpawned = 1)
 		//show_message("yellow")
 		sprite_index = spr_yellow
 	}
-/*	if(rng >= 61 and rng < 81)
+	if(rng >= 61 and rng < 81)
 	{
 		obj_ship_blue_morph = 1
+		sprite_index = spr_blue
 	}
 	if(rng >= 81 and rng <= 100)
 	{
 		obj_controller.purple_sniper_count++
-		with(instance_create_layer(self.x, self.y, "Instances", obj_enemy))
-		{
-			obj_enemy.obj_ship_purple_sniper = 1
-		}	
-	}*/
+		obj_ship_purple_sniper = 1
+		sprite_index = spr_purple
+	}
 	justSpawned = 0
 }
 
@@ -216,47 +215,43 @@ if(obj_ship_yellow_speedy == 1)
 ///////////////////////////////////////////////////////
 //BLUE
 
-/*if(obj_ship_blue_morph == 1)
+if(obj_ship_blue_morph == 1)
 {
 	morph += 1
-	if(morph <= 180 and obj_ship_blue_morph == 1)
+	if(morph <= 180)
 	{
-		if(obj_ship_blue_morph == 1)
+		if(cooldown >= shooting_rate)
 		{
-		
-			if(cooldown >= shooting_rate)
-			{
-				cooldown = 0
-				spawn = 1
-			}
-			if(spawn = 0)
-			{
-				cooldown += 1
-			}
+			cooldown = 0
+			spawn = 1
+		}
+		if(spawn = 0)
+		{
+			cooldown += 1
+		}
 	
-			if(obj_ship_blue_morph == 1 and instance_exists(obj_enemy_target))
+		if(obj_ship_blue_morph == 1 and instance_exists(obj_enemy_target))
+		{
+			if(distance_to_object(obj_enemy_target) >= stop and instance_exists(obj_enemy_target))
 			{
-				if(distance_to_object(obj_enemy_target) >= stop and instance_exists(obj_enemy_target))
-				{
-					spd = 80
-					scr_movement(spd, obj_enemy_target)
-				}
-				if(distance_to_object(obj_enemy_target) < stop and instance_exists(obj_enemy_target))
-				{
-					spd = 0
-					scr_movement(spd, obj_enemy_target)
-				}
-				if(distance_to_object(obj_enemy_target) <= range and spawn = 1 and instance_exists(obj_enemy_target))
-				{
-					instance_create_layer(self.x, self.y, "Instances", obj_ship_bullet)
-					spawn = 0 
-				}
+				spd = 80
+				scr_movement(spd, obj_enemy_target)
+			}
+			if(distance_to_object(obj_enemy_target) < stop and instance_exists(obj_enemy_target))
+			{
+				spd = 0
+				scr_movement(spd, obj_enemy_target)
+			}
+			if(distance_to_object(obj_enemy_target) <= range and spawn = 1 and instance_exists(obj_enemy_target))
+			{
+				instance_create_layer(self.x, self.y, "Instances", obj_ship_bullet)
+				spawn = 0 
 			}
 		}
 	}
 	else
 	{
-		if (morph >= 181)
+		if (morph >= 182)
 		{
 			morph = 181
 		}
@@ -267,10 +262,10 @@ if(obj_ship_yellow_speedy == 1)
 				if(obj_controller.red_seeker_count <= obj_controller.purple_sniper_count)
 				{
 					obj_ship_red_seeker = 1
-					instance_create_layer(self.x, self.y, "Instances", obj_enemy)
+					obj_ship_blue_morph = 0
+					sprite_index = spr_red
 					obj_controller.red_seeker_count++
 				}
-				instance_destroy(self)
 			}
 		}
 		if(obj_controller.green_tank_count <= obj_controller.green_tank_count)
@@ -280,10 +275,10 @@ if(obj_ship_yellow_speedy == 1)
 				if(obj_controller.green_tank_count <= obj_controller.purple_sniper_count)
 				{
 					obj_ship_green_tank = 1
-					instance_create_layer(self.x, self.y, "Instances", obj_enemy)
+					obj_ship_blue_morph = 0
+					sprite_index = spr_green
 					obj_controller.green_tank_count++
 				}
-				instance_destroy(self)
 			}
 		}
 		if(obj_controller.yellow_speedy_count <= obj_controller.green_tank_count)
@@ -293,10 +288,10 @@ if(obj_ship_yellow_speedy == 1)
 				if(obj_controller.yellow_speedy_count <= obj_controller.purple_sniper_count)
 				{
 					obj_ship_yellow_speedy = 1
-					instance_create_layer(self.x, self.y, "Instances", obj_enemy)
+					obj_ship_blue_morph = 0
+					sprite_index = spr_yellow
 					obj_controller.yellow_speedy_count++
 				}
-				instance_destroy(self)
 			}
 		}
 		if(obj_controller.purple_sniper_count <= obj_controller.green_tank_count)
@@ -306,10 +301,10 @@ if(obj_ship_yellow_speedy == 1)
 				if(obj_controller.purple_sniper_count <= obj_controller.purple_sniper_count)
 				{
 					obj_ship_purple_sniper = 1
-					instance_create_layer(self.x, self.y, "Instances", obj_enemy)
+					obj_ship_blue_morph = 0
+					sprite_index = spr_purple
 					obj_controller.purple_sniper_count++
 				}
-				instance_destroy(self)
 			}
 		}	
 	}
@@ -341,25 +336,25 @@ if(obj_ship_purple_sniper == 1)
 			{
 				if(spawn = 1)
 				{
-					obj_enemy_target = obj_tower
+					purple_focus = obj_tower
 					instance_create_layer(self.x, self.y, "Instances", obj_ship_bullet)
 					spawn = 0
 				}
 			}
-			if(distance_to_object(obj_colony) <= stop and instance_exists(obj_colony))
+			else if(distance_to_object(obj_colony) <= stop and instance_exists(obj_colony))
 			{
 				if(spawn = 1)
 				{
-					obj_enemy_target = obj_colony
+					purple_focus = obj_colony
 					instance_create_layer(self.x, self.y, "Instances", obj_ship_bullet)
 					spawn = 0
 				}
 			}
-			if(distance_to_object(obj_transmission_tower) <= stop and instance_exists(obj_transmission_tower))
+			else if(distance_to_object(obj_transmission_tower) <= stop and instance_exists(obj_transmission_tower))
 			{
 				if(spawn = 1)
 				{
-					obj_enemy_target = obj_transmission_tower
+					purple_focus = obj_transmission_tower
 					instance_create_layer(self.x, self.y, "Instances", obj_ship_bullet)
 					spawn = 0
 				}
@@ -368,16 +363,16 @@ if(obj_ship_purple_sniper == 1)
 		else 
 		{
 			spd = 40
-			obj_enemy_target = obj_transmission_tower
-			if(instance_exists(obj_enemy_target))
+			purple_focus = obj_transmission_tower
+			if(instance_exists(purple_focus))
 			{
-				scr_movement(spd, obj_enemy_target)
+				scr_movement(spd, purple_focus)
 			}
 		}
 	}
 }
 
-*/
+
 
 
 /////////////////////////////////
