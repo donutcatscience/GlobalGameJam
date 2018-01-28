@@ -4,6 +4,7 @@ hp = 200
 justSpawned = 1
 rng = 0
 set = 1
+hack = 0
 
 cooldown = 0
 morph = 0

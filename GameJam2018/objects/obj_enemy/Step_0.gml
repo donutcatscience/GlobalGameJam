@@ -1,3 +1,5 @@
+if(hack = 0)
+{
 if(justSpawned = 1)
 {
 	rng = irandom_range(1, 100)
@@ -364,6 +366,10 @@ if(obj_ship_purple_sniper == 1)
 		{
 			spd = 40
 			purple_focus = obj_transmission_tower
+			if(distance_to_object(purple_focus) <= stop)
+			{
+				spd = 0
+			}
 			if(instance_exists(purple_focus))
 			{
 				scr_movement(spd, purple_focus)
@@ -386,6 +392,16 @@ if(obj_ship_purple_sniper == 1)
 	}
 }
 */
+
+}
+else 
+{
+	if(instance_exists(obj_enemy))
+	{
+		scr_movement(spd, instance_nearest(self.x, self.y, obj_enemy))
+	}
+}
+
 if (hp <= 0)
 {
 	instance_destroy(self)
