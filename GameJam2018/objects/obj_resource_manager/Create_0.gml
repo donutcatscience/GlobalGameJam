@@ -46,9 +46,3 @@ else if(object_id == 4)
 	oxygen_count = 10;
 	hydrogen_count = 2;
 }
-
-else if(object_id == 5)
-{
-	oxygen_count = 5;
-	hydrogen_count = 10;
-}

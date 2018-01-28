@@ -383,6 +383,14 @@
             }
         },
         {
+            "Key": "b61075a0-f3b2-45bb-98cb-9ed070abdb1b",
+            "Value": {
+                "id": "d636eb30-6313-4fef-a203-b604506d6402",
+                "resourcePath": "sprites\\Scan_Anim\\Scan_Anim.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "b8a5248b-caf9-4d0f-9998-3147897bd6a3",
             "Value": {
                 "id": "ace23a9c-ebe4-4626-940f-807608926b93",

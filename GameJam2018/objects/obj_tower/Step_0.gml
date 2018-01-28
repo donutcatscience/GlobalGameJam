@@ -5,7 +5,7 @@ x = attached_to.x;
 y = attached_to.y;
 
 if(distance_to_object(instance_nearest(x, y, obj_enemy)) <= range && 
-(!(instanceID == 5)) || (!(instanceID == 4))) //if tower is not hack or harvester
+((!(instanceID == 5)) || (!(instanceID == 4)))) //if tower is not hack or harvester
 {
 	if(canShoot)
 	{
@@ -17,25 +17,15 @@ if(distance_to_object(instance_nearest(x, y, obj_enemy)) <= range &&
 
 if(instanceID == 5 && canShoot && harvest_count < 4)
 {
-	//add bars for program
-	canShoot = false;
-	harvest_count++;
-	alarm[0] = room_speed * cooldown;
-	
-	iron_harvested += bodyHarvested.iron_count;
-	gold_harvested += bodyHarvested.gold_count;
-	oxygen_harvested += bodyHarvested.oxygen_count;
-	hydrogen_harvested += bodyHarvested.hydrogen_count;
-	
-	if(distance_to_object(instance_nearest(x, y, obj_player)) <= 200 && harvest_count > 0)
-	{
-		harvest_count = 0;
+		//add bars for program
+		canShoot = false;
+		harvest_count++;
+		alarm[0] = room_speed * 9;
 		
-		iron_harvested = 0;
-		gold_harvested = 0;
-		oxygen_harvested = 0;
-		hydrogen_harvested = 0;
-	}
+		iron_harvested += bodyHarvested.iron_count;
+		gold_harvested += bodyHarvested.gold_count;
+		oxygen_harvested += bodyHarvested.oxygen_count;
+		hydrogen_harvested += bodyHarvested.hydrogen_count;
 }
 
 if(instanceID == 4)

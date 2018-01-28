@@ -5,7 +5,6 @@ if(distance_to_object(instance_nearest(x, y, obj_asteroid)) <= 200)
 {
 	global.obj_closest = instance_nearest(x, y, obj_asteroid);
 	instance_create_layer(global.obj_closest.x, global.obj_closest.y, "Instances", obj_tower);
-	build_cooldown = false;
 	alarm[0] = room_speed * 15;
 }
 else if(distance_to_object(instance_nearest(x, y, obj_asteroid)) <= 200)

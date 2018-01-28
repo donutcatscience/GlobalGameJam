@@ -15,8 +15,3 @@ turn_rate = 4;
 
 //build variables
 build_cooldown = false;
-
-iron_player = 0;
-gold_player = 0;
-hydrogen_player = 0;
-oxygen_player = 0;

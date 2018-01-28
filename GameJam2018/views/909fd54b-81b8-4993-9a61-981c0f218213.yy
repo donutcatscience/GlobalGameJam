@@ -9,7 +9,8 @@
         "1cd30e60-e080-4c10-b3a0-3a0455a805a3",
         "75dcbca7-8d89-4630-b32e-56fa6d9a1200",
         "18dc5ddf-7c4d-41ee-b97d-656543946e40",
-        "adeced72-b118-4fe3-aed3-99c0f7f9e759"
+        "adeced72-b118-4fe3-aed3-99c0f7f9e759",
+        "b61075a0-f3b2-45bb-98cb-9ed070abdb1b"
     ],
     "filterType": "GMSprite",
     "folderName": "Kevkev Spritesprite",
