@@ -4,11 +4,12 @@
     "mvc": "1.1",
     "name": "ffc1c3e1-e6ad-40a7-ae42-6b2157d89d50",
     "children": [
-        "e9996865-3eb3-483a-901c-ccaaf13053f8",
-        "492fa5f0-3232-4687-833a-d1e3b8524c93",
-        "a2dff012-05ee-4e56-ac0c-7fc5f4d877c9",
-        "22719379-20f9-4cab-b621-947761b152ca",
-        "b68379ab-94a8-4902-a5c1-39d0b038ec4a"
+        "41da4d27-8591-4db4-813e-eefd2b9000de",
+        "83880027-7aa5-45fb-bc5f-f7a3331551c5",
+        "7a625cd9-5354-4f59-9d72-28efc15b66d4",
+        "38a97ada-7a46-47b9-854f-e749c4ad651e",
+        "4d2c01f4-d157-446d-95c4-bb4b93b441b5",
+        "848b0a76-25b0-4ed3-9244-a27e1111b622"
     ],
     "filterType": "GMObject",
     "folderName": "Ron's objects",
