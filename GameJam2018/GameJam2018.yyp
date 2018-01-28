@@ -223,6 +223,14 @@
             }
         },
         {
+            "Key": "b550ebd3-7d43-4170-8ff2-6e50f74678d8",
+            "Value": {
+                "id": "2f0fe6bc-edec-4938-81f4-beee62759ede",
+                "resourcePath": "objects\\obj_comet\\obj_comet.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "c599385c-ee60-4d9f-b03a-0ba1878ee7a9",
             "Value": {
                 "id": "840886f0-033a-4e08-a68d-538ea78b2a3b",
